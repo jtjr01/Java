@@ -25,7 +25,6 @@ public static void main(String[] args){
 		b.setCell(row, column, Cell.X);
 		System.out.println(b.toString());
 		b.victory();
-		b.victory();
 		}
 	s.close();
 	}
