@@ -24,6 +24,7 @@ public static void main(String[] args){
 		System.out.println("Column = " + column);
 		b.setCell(row, column, Cell.X);
 		System.out.println(b.toString());
+		b.victory();
 		}
 	s.close();
 	}
