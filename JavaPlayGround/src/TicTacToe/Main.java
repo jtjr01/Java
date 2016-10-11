@@ -15,10 +15,10 @@ public static void main(String[] args){
 	while(count < 9){
 		if(turn == 1){
 			System.out.print("Please enter a row,column pair for the location you would like an X: ");
-		}
+			}
 		else{
 			System.out.print("Please enter a row,column pair for the location you would like an O: ");
-		}
+			}
 		String rowColumnString = s.nextLine();
 		String[] position = rowColumnString.split(",");
 		int row = Integer.parseInt(position[0]);
@@ -27,15 +27,26 @@ public static void main(String[] args){
 		System.out.println("Column = " + column);
 		if(turn == 1){
 			b.setCell(row, column, Cell.X);
+			System.out.println(b.toString());
+			if(b.victory(turn) == true){
+				break;
+			}
 			turn++;
-		}
+			}
 		else{
 			b.setCell(row, column, Cell.O);
+			System.out.println(b.toString());
+			if(b.victory(turn) == true){
+				break;
+			}
 			turn--;
-		}
-		System.out.println(b.toString());
+			}
 		count++;
+		if(count == 9){
+			System.out.println("The game ended in a draw");
+			}
 		}
 	s.close();
+	b.exit();
 	}
 }
