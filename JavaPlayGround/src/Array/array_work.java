@@ -1,3 +1,8 @@
+/*
+ * NameL Jose Terrones Jr,
+ * Purpose: Goes through a few basic array functions.
+ */
+
 package Array;
 
 import java.util.*;
@@ -7,6 +12,7 @@ public class array_work {
 	private String user_name;
 	static int amount;
 	private String array[] = new String [amount];
+	//empty constructor
 	array_work()
 	{
 	}
@@ -23,12 +29,14 @@ public class array_work {
 		System.out.println("What is your name?");
 		setName(name.nextLine());
 	}
+	//initial array amount of items
 	public void amount_add()
 	{
 		System.out.println("How many names do you want to add?");
 		amount = name.nextInt();
 		array = new String[amount];
 	}
+	//add an additional name at the end
 	public void add_name()
 	{
 		int count;
@@ -38,6 +46,7 @@ public class array_work {
 			array[count] = name.next();
 		}
 	}
+	//adds another name at a set index location
 	public void add_more()
 	{
 		int index;
@@ -68,6 +77,7 @@ public class array_work {
 		array[index] = new_name;
 		print();
 	}
+	//displays the array to the user
 	public void print()
 	{
 		for(int i = 0; i < array.length; i++)

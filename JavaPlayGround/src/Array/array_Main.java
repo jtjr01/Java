@@ -1,3 +1,10 @@
+/*
+ * Name: Jose Terrones Jr.
+ * Purpose: A simple program that does basic work with arrays.
+ * Functions are adding a name, printing the array, and adding
+ * a name anywhere in the array and then reprinting it.
+ */
+
 package Array;
 
 public class array_Main {
