@@ -1,3 +1,9 @@
+/*
+ * Name: Jose Terrones Jr.
+ * Purpose: A simple tic tac toe game that is displayed on the console.
+ * Players will take turns playing the game until a win is had or a draaw occurs.
+ */
+
 package TicTacToe;
 
 import java.util.Scanner;
@@ -13,12 +19,14 @@ public static void main(String[] args){
 	int count = 0;
 	System.out.println(b.toString());
 	while(count < 9){
+		//Alternates between players
 		if(turn == 1){
 			System.out.print("Please enter a row,column pair for the location you would like an X: ");
 			}
 		else{
 			System.out.print("Please enter a row,column pair for the location you would like an O: ");
 			}
+		//Parses the string of coordinates using the comma as the split
 		String rowColumnString = s.nextLine();
 		String[] position = rowColumnString.split(",");
 		int row = Integer.parseInt(position[0]);
