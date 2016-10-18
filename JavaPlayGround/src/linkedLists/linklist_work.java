@@ -5,7 +5,7 @@
  * specified name.
  */
 
-package lab20;
+package linkedLists;
 
 import java.util.*;
 

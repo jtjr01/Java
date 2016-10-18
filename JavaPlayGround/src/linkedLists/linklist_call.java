@@ -4,7 +4,7 @@
  * and then it will ask the user to input the names. Then it will 
  * ask where too add another name, and finally it will delete the name.
  */
-package lab20;
+package linkedLists;
 
 public class linklist_call {
 
